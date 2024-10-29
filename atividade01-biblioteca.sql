@@ -9,7 +9,7 @@ CREATE TABLE Autores (
 CREATE TABLE Livros (
     LivroID INT PRIMARY KEY,
     AutorID INT,
-    AnoPublicacao DATE,
+    AnoPublicacao INTEGER,
     FOREIGN KEY (AutorID) REFERENCES Autores(AutorID)
 );
 
